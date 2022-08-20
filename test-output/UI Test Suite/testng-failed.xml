@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UI Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Functional Tests(failed)">
+    <classes>
+      <class name="ui.VerifyTitleAndTextTestSoftAssert">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="titleTestAndTextTest"/>
+        </methods>
+      </class> <!-- ui.VerifyTitleAndTextTestSoftAssert -->
+      <class name="ui.VerifyTitleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="titleTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ui.VerifyTitleTest -->
+      <class name="ui.VerifyTitleAndTextTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="titleTest"/>
+          <include name="textTest"/>
+        </methods>
+      </class> <!-- ui.VerifyTitleAndTextTest -->
+      <class name="ui.GroupTestExample">
+        <methods>
+          <include name="textTest"/>
+          <include name="setup"/>
+          <include name="groupTestExample"/>
+          <include name="titleTest"/>
+          <include name="tearDown"/>
+          <include name="groupTestRegressionSmoke"/>
+        </methods>
+      </class> <!-- ui.GroupTestExample -->
+    </classes>
+  </test> <!-- Functional Tests(failed) -->
+</suite> <!-- Failed suite [UI Test Suite] -->

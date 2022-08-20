@@ -1,5 +1,13 @@
 package ui;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -23,12 +31,11 @@ public class VerifyTitleTest {
 	}
 
 	@Test
-	public void titleTestAndTextTest() throws InterruptedException {
+	public void titleTest() throws InterruptedException {
 		String expectedTitle = "Swag Labs";
 		String actualTitle = driver.getTitle();
-		Assert.assertEquals(actualTitle, expectedTitle, "Title Verification");
+		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 	}
-
 
 	@AfterClass
 	public void tearDown() {

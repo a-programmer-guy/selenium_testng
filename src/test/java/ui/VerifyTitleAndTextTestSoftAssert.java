@@ -1,5 +1,13 @@
 package ui;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -24,20 +32,19 @@ public class VerifyTitleAndTextTestSoftAssert {
 
 	@Test
 	public void titleTestAndTextTest() throws InterruptedException {
-		String expectedTitle = "Swag fdLabs";
+		String expectedTitle = "Swag Labs";
 		String actualTitle = driver.getTitle();
 		// Hard assert title matches
 //		Assert.assertEquals(actualTitle, expectedTitle, "Title Verification");
 		softAssert = new SoftAssert();
-		softAssert.assertEquals(actualTitle, expectedTitle, "Title Verification:");
-		String expectedText = "Logidsn";
+		AssertJUnit.assertEquals("Title Verification:", expectedTitle, actualTitle );
+		String expectedText = "Login";
 		String actualText = driver.findElement(By.xpath("//*[@id='login-button']")).getAttribute("value");
 		// Hard assert Text matches
 //		Assert.assertEquals(actualText, expectedText);
-		softAssert.assertEquals(actualText, expectedText, "Text Verification:");
+		AssertJUnit.assertEquals("Text Verification:", expectedText, actualText);
 		softAssert.assertAll();
 	}
-
 
 	@AfterClass
 	public void tearDown() {

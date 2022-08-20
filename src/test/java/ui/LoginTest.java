@@ -1,5 +1,9 @@
 package ui;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -43,7 +47,7 @@ public class LoginTest {
 	public void logoutTest() {
 		System.out.println("Logoout test successful...");
 	}
-	
+
 	@AfterTest
 	public void tearDown() {
 		driver.close();
