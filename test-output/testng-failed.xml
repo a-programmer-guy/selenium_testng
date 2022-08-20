@@ -5,7 +5,9 @@
     <classes>
       <class name="ui.VerifyTitleTest">
         <methods>
-          <include name="titleTest"/>
+          <include name="setup"/>
+          <include name="titleTestAndTextTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- ui.VerifyTitleTest -->
     </classes>
