@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-19T15:07:16 CST" name="Default suite" finished-at="2022-08-19T15:07:16 CST" duration-ms="29">
+  <suite started-at="2022-08-19T18:51:48 CST" name="Default suite" finished-at="2022-08-19T18:51:49 CST" duration-ms="743">
     <groups>
     </groups>
-    <test started-at="2022-08-19T15:07:16 CST" name="Default test" finished-at="2022-08-19T15:07:16 CST" duration-ms="29">
-      <class name="ui.LoginTest">
-        <test-method signature="loginTest()[pri:0, instance:ui.LoginTest@1613674b]" started-at="2022-08-19T15:07:16 CST" name="loginTest" finished-at="2022-08-19T15:07:16 CST" duration-ms="5" status="PASS">
+    <test started-at="2022-08-19T18:51:48 CST" name="Default test" finished-at="2022-08-19T18:51:49 CST" duration-ms="743">
+      <class name="ui.VerifyTitleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ui.VerifyTitleTest@639aba11]" started-at="2022-08-19T18:51:48 CST" name="setup" finished-at="2022-08-19T18:51:49 CST" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- ui.LoginTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="textTest()[pri:0, instance:ui.VerifyTitleTest@639aba11]" started-at="2022-08-19T18:51:49 CST" name="textTest" finished-at="2022-08-19T18:51:49 CST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textTest -->
+        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleTest@639aba11]" started-at="2022-08-19T18:51:49 CST" name="titleTest" finished-at="2022-08-19T18:51:49 CST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.VerifyTitleTest@639aba11]" started-at="2022-08-19T18:51:49 CST" name="tearDown" finished-at="2022-08-19T18:51:49 CST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.VerifyTitleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
