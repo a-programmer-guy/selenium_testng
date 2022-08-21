@@ -1,13 +1,5 @@
 package ui;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -19,7 +11,7 @@ import org.testng.annotations.Test;
 
 import utility.DriverFactory;
 
-public class VerifyTitleAndTextTest {
+public class VerifyTitleAndTextTest extends DriverFactory{
 	
 	DriverFactory df = new DriverFactory();
 	WebDriver driver = df.getBrowser("Chrome");
@@ -34,7 +26,7 @@ public class VerifyTitleAndTextTest {
 		String expectedTitle = "Swag Labs";
 		String actualTitle = driver.getTitle();
 		// Hard assert title matches
-		AssertJUnit.assertEquals("Title Verification", expectedTitle, actualTitle);
+		Assert.assertEquals(expectedTitle, actualTitle, "Title Verification");
 	}
 	
 	@Test(priority = 1)
@@ -42,7 +34,7 @@ public class VerifyTitleAndTextTest {
 		String expectedText = "Login";
 		String actualText = driver.findElement(By.xpath("//*[@id='login-button']")).getAttribute("value");
 		// Hard assert Text matches
-		AssertJUnit.assertEquals(actualText, expectedText);
+		Assert.assertEquals(actualText, expectedText);
 	}
 
 	@AfterClass

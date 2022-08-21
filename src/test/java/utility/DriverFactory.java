@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -17,9 +19,10 @@ public class DriverFactory {
 	/*
 	 * Factory method for getting browsers
 	 */
+	@BeforeSuite
 	public static WebDriver getBrowser(String browserName) {
 		WebDriver driver = null;
-
+		
 		switch (browserName) {
 		case "Firefox":
 			driver = drivers.get("Firefox");
@@ -49,6 +52,10 @@ public class DriverFactory {
 		return driver;
 	}
 
+	/*
+	 * Method to iterate through drivers that have been set up and close them
+	 */
+	@AfterSuite
 	public static void closeAllDrivers() {
 		for (String key : drivers.keySet()) {
 			drivers.get(key).close();

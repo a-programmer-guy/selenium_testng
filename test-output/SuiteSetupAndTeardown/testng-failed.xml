@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteSetupAndTeardown]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BeforeAndAfterSuiteTest(failed)">
+    <classes>
+      <class name="ui.BeforeSuiteExampleTest">
+        <methods>
+          <include name="titleTest"/>
+          <include name="dataTearDown"/>
+          <include name="textTest"/>
+          <include name="dataSetup"/>
+        </methods>
+      </class> <!-- ui.BeforeSuiteExampleTest -->
+    </classes>
+  </test> <!-- BeforeAndAfterSuiteTest(failed) -->
+</suite> <!-- Failed suite [SuiteSetupAndTeardown] -->
