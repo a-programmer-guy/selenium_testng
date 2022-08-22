@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -27,6 +28,7 @@ public class GroupTestExample {
 		String expectedTitle = "Swag Labs";
 		String actualTitle = driver.getTitle();
 		// Hard assert title matches
+		System.out.println("Title test...");
 		AssertJUnit.assertEquals("Title Verification", expectedTitle, actualTitle);
 	}
 	
@@ -37,6 +39,7 @@ public class GroupTestExample {
 		String actualText = driver.findElement(By.xpath("//*[@id='login-button']")).getAttribute("value");
 		// Hard assert Text matches
 		AssertJUnit.assertEquals(actualText, expectedText);
+		System.out.println("Text test...");
 	}
 	
 	@Test(groups = "regression")
@@ -47,6 +50,8 @@ public class GroupTestExample {
 	@Test(groups = {"regression", "smoke"})
 	public void groupTestRegressionSmoke() {
 		System.out.println("Group test - regression, smoke");
+		// Fail test step on purpose for listener example
+		Assert.assertTrue(false);
 	}
 
 	@AfterClass

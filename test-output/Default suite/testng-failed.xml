@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ui.DataProviderDemoTest">
+      <class name="ui.SauceDemoLogin">
         <methods>
-          <include name="test3"/>
+          <include name="launchApp"/>
         </methods>
-      </class> <!-- ui.DataProviderDemoTest -->
+      </class> <!-- ui.SauceDemoLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
