@@ -5,7 +5,7 @@
   	<!-- Add in the name value pair within the parameter tag to pass into the class.-->
   	<parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="ui.SauceDemoLogin"/>
+      <class name="ui.SauceDemoParameterLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

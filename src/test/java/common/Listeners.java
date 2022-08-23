@@ -1,15 +1,19 @@
 package common;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import utility.TestUtilities;
 
 /*
 Extend the ITestListener interface to access Listener functionality
 Right click on class name and select Source -> Override/Implement methods
 to generate Listener methods automatically.
 */
-public class Listeners implements ITestListener {
+public class Listeners extends TestUtilities implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -24,6 +28,12 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("OnTestFail Listener, Test failed - Screenshot captured.");
+		try {
+			getScreenShot();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override

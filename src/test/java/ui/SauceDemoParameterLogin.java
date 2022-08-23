@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SauceDemoLogin {
+public class SauceDemoParameterLogin {
 	
 	public static WebDriver driver;
 	/*
