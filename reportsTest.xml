@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- class for capturing screen shot listener class-name="common.Listeners") -->
+<suite name="ListenerTestSuite">
+	<listeners>
+		<listener class-name="common.Listeners"></listener>			
+	</listeners>
+	<test name="Reports Testing">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="ui.ReportsTest"/>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
