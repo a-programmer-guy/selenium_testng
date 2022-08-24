@@ -8,13 +8,14 @@
   <test thread-count="5" name="Reports Testing(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="ui.ReportsTest">
+      <class name="ui.DependencyTest">
         <methods>
+          <include name="userRegistration"/>
           <include name="closerBrowser"/>
+          <include name="searchUser"/>
           <include name="launchBrowser"/>
-          <include name="reporterTest2"/>
         </methods>
-      </class> <!-- ui.ReportsTest -->
+      </class> <!-- ui.DependencyTest -->
     </classes>
   </test> <!-- Reports Testing(failed) -->
 </suite> <!-- Failed suite [ListenerTestSuite] -->

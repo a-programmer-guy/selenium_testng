@@ -1,54 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Method name is - reporterTest1]]>
-    </line>
-    <line>
-      <![CDATA[Status of execution is - 1]]>
-    </line>
-    <line>
-      <![CDATA[Method name is - reporterTest2]]>
-    </line>
-    <line>
-      <![CDATA[Status of exectution is - 2]]>
-    </line>
-    <line>
-      <![CDATA[<a href=/home/kay/Desktop/projects/selenium_testng/screenshots/Mon-Aug-22-22-18-37-CST-2022.png/>Test Results</>]]>
-    </line>
-    <line>
-      <![CDATA[Method name is - reporterTest3]]>
-    </line>
-    <line>
-      <![CDATA[Status of execution is - 1]]>
-    </line>
-    <line>
-      <![CDATA[Method name is - reporterTest4]]>
-    </line>
-    <line>
-      <![CDATA[Status of execution is - 1]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-08-23T22:01:19 CST" name="ListenerTestSuite" finished-at="2022-08-23T22:01:34 CST" duration-ms="14356">
+  <suite started-at="2022-08-24T08:21:54 CST" name="Default suite" finished-at="2022-08-24T08:21:54 CST" duration-ms="31">
     <groups>
     </groups>
-    <test started-at="2022-08-23T22:01:19 CST" name="Reports Testing" finished-at="2022-08-23T22:01:34 CST" duration-ms="14356">
-      <class name="ui.ReportsTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ui.ReportsTest@7ac296f6]" started-at="2022-08-23T22:01:16 CST" name="launchBrowser" finished-at="2022-08-23T22:01:19 CST" duration-ms="2740" status="PASS">
+    <test started-at="2022-08-24T08:21:54 CST" name="Default test" finished-at="2022-08-24T08:21:54 CST" duration-ms="31">
+      <class name="ui.DependencyTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ui.DependencyTest@e350b40]" started-at="2022-08-24T08:21:52 CST" name="launchBrowser" finished-at="2022-08-24T08:21:54 CST" duration-ms="2241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="reporterTest1()[pri:0, instance:ui.ReportsTest@7ac296f6]" started-at="2022-08-23T22:01:19 CST" name="reporterTest1" finished-at="2022-08-23T22:01:19 CST" duration-ms="3" status="PASS">
+        <test-method signature="reporterTest4()[pri:0, instance:ui.DependencyTest@e350b40]" started-at="2022-08-24T08:21:54 CST" name="reporterTest4" finished-at="2022-08-24T08:21:54 CST" duration-ms="3" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest1]]>
-            </line>
-            <line>
-              <![CDATA[Status of execution is - 1]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- reporterTest1 -->
-        <test-method signature="reporterTest2()[pri:0, instance:ui.ReportsTest@7ac296f6]" started-at="2022-08-23T22:01:19 CST" name="reporterTest2" finished-at="2022-08-23T22:01:33 CST" duration-ms="14123" status="FAIL">
+        </test-method> <!-- reporterTest4 -->
+        <test-method signature="userRegistration()[pri:0, instance:ui.DependencyTest@e350b40]" started-at="2022-08-24T08:21:54 CST" name="userRegistration" finished-at="2022-08-24T08:21:54 CST" duration-ms="6" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -59,7 +26,7 @@ at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertTrue(Assert.java:56)
 at org.testng.Assert.assertTrue(Assert.java:66)
-at ui.ReportsTest.reporterTest2(ReportsTest.java:18)
+at ui.DependencyTest.userRegistration(DependencyTest.java:13)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,42 +59,51 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest2]]>
-            </line>
-            <line>
-              <![CDATA[Status of exectution is - 2]]>
-            </line>
-            <line>
-              <![CDATA[<a href=/home/kay/Desktop/projects/selenium_testng/screenshots/Mon-Aug-22-22-18-37-CST-2022.png/>Test Results</>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- reporterTest2 -->
-        <test-method signature="reporterTest3()[pri:0, instance:ui.ReportsTest@7ac296f6]" started-at="2022-08-23T22:01:34 CST" name="reporterTest3" finished-at="2022-08-23T22:01:34 CST" duration-ms="1" status="PASS">
+        </test-method> <!-- userRegistration -->
+        <test-method signature="searchUser()[pri:0, instance:ui.DependencyTest@e350b40]" started-at="2022-08-24T08:21:54 CST" name="searchUser" finished-at="2022-08-24T08:21:54 CST" depends-on-methods="ui.DependencyTest.userRegistration" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ui.DependencyTest.searchUser() on instance ui.DependencyTest@e350b40 depends on not successfully finished methods 
+[ui.DependencyTest.userRegistration() on instance ui.DependencyTest@e350b40]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ui.DependencyTest.searchUser() on instance ui.DependencyTest@e350b40 depends on not successfully finished methods 
+[ui.DependencyTest.userRegistration() on instance ui.DependencyTest@e350b40]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest3]]>
-            </line>
-            <line>
-              <![CDATA[Status of execution is - 1]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- reporterTest3 -->
-        <test-method signature="reporterTest4()[pri:0, instance:ui.ReportsTest@7ac296f6]" started-at="2022-08-23T22:01:34 CST" name="reporterTest4" finished-at="2022-08-23T22:01:34 CST" duration-ms="0" status="PASS">
+        </test-method> <!-- searchUser -->
+        <test-method signature="updateUser()[pri:0, instance:ui.DependencyTest@e350b40]" started-at="2022-08-24T08:21:54 CST" name="updateUser" finished-at="2022-08-24T08:21:54 CST" depends-on-methods="ui.DependencyTest.userRegistration" duration-ms="0" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest4]]>
-            </line>
-            <line>
-              <![CDATA[Status of execution is - 1]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- reporterTest4 -->
-        <test-method is-config="true" signature="closerBrowser()[pri:0, instance:ui.ReportsTest@7ac296f6]" started-at="2022-08-23T22:01:34 CST" name="closerBrowser" finished-at="2022-08-23T22:01:34 CST" duration-ms="668" status="PASS">
+        </test-method> <!-- updateUser -->
+        <test-method is-config="true" signature="closerBrowser()[pri:0, instance:ui.DependencyTest@e350b40]" started-at="2022-08-24T08:21:54 CST" name="closerBrowser" finished-at="2022-08-24T08:21:55 CST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closerBrowser -->
-      </class> <!-- ui.ReportsTest -->
-    </test> <!-- Reports Testing -->
-  </suite> <!-- ListenerTestSuite -->
+      </class> <!-- ui.DependencyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
