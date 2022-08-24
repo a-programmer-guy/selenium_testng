@@ -23,13 +23,13 @@
 			<version>5.2.3</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
+		<!-- https://mvnrepository.com/artifact/com.github.sdrss/reportng -->
 		<dependency>
-			<groupId>org.uncommons</groupId>
+			<groupId>com.github.sdrss</groupId>
 			<artifactId>reportng</artifactId>
-			<version>1.1.4</version>
-			<scope>test</scope>
+			<version>2.6.5</version>
 		</dependency>
+
 
 	</dependencies>
 

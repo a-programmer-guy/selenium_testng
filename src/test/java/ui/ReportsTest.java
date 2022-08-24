@@ -1,8 +1,11 @@
 package ui;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ReportsTest {
+import common.BaseTest;
+
+public class ReportsTest extends BaseTest{
 	
 	@Test
 	public void reporterTest1() {
@@ -10,7 +13,9 @@ public class ReportsTest {
 	}
 	@Test
 	public void reporterTest2() {
-		System.out.println("This is test2");
+		driver.get("https://salesforce.com");
+		System.out.println("This is test2 - fail");
+		Assert.assertTrue(false);
 	}
 	@Test
 	public void reporterTest3() {

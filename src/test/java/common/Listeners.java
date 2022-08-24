@@ -18,16 +18,18 @@ public class Listeners extends TestUtilities implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
+		// Change the name of the test in the ReportNG report
+		System.setProperty("org.uncommons.reportng.title", "Programmer Guy Test Report");
 		// To log the name of every test run in a suite
 		Reporter.log("Method name is - " + result.getName());
 		System.out.println("OnTestStart Listener, Test case is starting...");
 	}
-	// Successful status is set to a 1.
+	// getStatus successful result returns a 1.
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		Reporter.log("Status of execution is - " + result.getStatus());
 	}
-	// Failure status is set to 2.
+	// getStatus failure returns a 2 (int)
 	@Override
 	public void onTestFailure(ITestResult result) {
 		Reporter.log("Status of exectution is - " + result.getStatus());	
@@ -37,6 +39,13 @@ public class Listeners extends TestUtilities implements ITestListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		// Add link to html report to show screen shot of failed test
+		String directory = System.getProperty("user.dir");
+		System.out.println("Directory is: " + directory);
+		// To fix broken picture link after adding ReportNG - add the System.setProperty
+		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		String link = String.format("<a href=%s/screenshots/Mon-Aug-22-22-18-37-CST-2022.png/>Test Results Screenshot</>", directory);
+		Reporter.log(link);
 	}
 
 	@Override
