@@ -12,5 +12,7 @@ WebDriverManager for browser driver management - Maven dependency [Link Here.](h
 
 TestNG is the testing framework - Maven repository [Link Here.](https://mvnrepository.com/artifact/org.testng/testng)
 
+ReportNG for better stylized reporting - Maven repository [Link Here.](https://mvnrepository.com/artifact/org.uncommons/reportng/1.1.4)
+
 #### Helpful Documentation:
 [TestNG Documentation](https://testng.org/doc/documentation-main.html)
