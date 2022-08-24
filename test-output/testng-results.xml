@@ -26,12 +26,12 @@
       <![CDATA[Status of execution is - 1]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-23T16:20:47 CST" name="ListenerTestSuite" finished-at="2022-08-23T16:20:47 CST" duration-ms="33">
+  <suite started-at="2022-08-23T21:17:40 CST" name="ListenerTestSuite" finished-at="2022-08-23T21:17:40 CST" duration-ms="33">
     <groups>
     </groups>
-    <test started-at="2022-08-23T16:20:47 CST" name="Reports Testing" finished-at="2022-08-23T16:20:47 CST" duration-ms="33">
+    <test started-at="2022-08-23T21:17:40 CST" name="Reports Testing" finished-at="2022-08-23T21:17:40 CST" duration-ms="33">
       <class name="ui.ReportsTest">
-        <test-method signature="reporterTest1()[pri:0, instance:ui.ReportsTest@3cebbb30]" started-at="2022-08-23T16:20:47 CST" name="reporterTest1" finished-at="2022-08-23T16:20:47 CST" duration-ms="6" status="PASS">
+        <test-method signature="reporterTest1()[pri:0, instance:ui.ReportsTest@47e2e487]" started-at="2022-08-23T21:17:40 CST" name="reporterTest1" finished-at="2022-08-23T21:17:40 CST" duration-ms="5" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Method name is - reporterTest1]]>
@@ -41,7 +41,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- reporterTest1 -->
-        <test-method signature="reporterTest2()[pri:0, instance:ui.ReportsTest@3cebbb30]" started-at="2022-08-23T16:20:47 CST" name="reporterTest2" finished-at="2022-08-23T16:20:47 CST" duration-ms="0" status="PASS">
+        <test-method signature="reporterTest2()[pri:0, instance:ui.ReportsTest@47e2e487]" started-at="2022-08-23T21:17:40 CST" name="reporterTest2" finished-at="2022-08-23T21:17:40 CST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Method name is - reporterTest2]]>
@@ -51,7 +51,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- reporterTest2 -->
-        <test-method signature="reporterTest3()[pri:0, instance:ui.ReportsTest@3cebbb30]" started-at="2022-08-23T16:20:47 CST" name="reporterTest3" finished-at="2022-08-23T16:20:47 CST" duration-ms="0" status="PASS">
+        <test-method signature="reporterTest3()[pri:0, instance:ui.ReportsTest@47e2e487]" started-at="2022-08-23T21:17:40 CST" name="reporterTest3" finished-at="2022-08-23T21:17:40 CST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Method name is - reporterTest3]]>
@@ -61,7 +61,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- reporterTest3 -->
-        <test-method signature="reporterTest4()[pri:0, instance:ui.ReportsTest@3cebbb30]" started-at="2022-08-23T16:20:47 CST" name="reporterTest4" finished-at="2022-08-23T16:20:47 CST" duration-ms="1" status="PASS">
+        <test-method signature="reporterTest4()[pri:0, instance:ui.ReportsTest@47e2e487]" started-at="2022-08-23T21:17:40 CST" name="reporterTest4" finished-at="2022-08-23T21:17:40 CST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Method name is - reporterTest4]]>

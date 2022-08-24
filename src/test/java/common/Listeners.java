@@ -2,7 +2,6 @@ package common;
 
 import java.io.IOException;
 
-import org.apache.commons.logging.Log;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

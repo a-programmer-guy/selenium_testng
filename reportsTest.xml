@@ -3,7 +3,8 @@
 <!-- class for capturing screen shot listener class-name="common.Listeners") -->
 <suite name="ListenerTestSuite">
 	<listeners>
-		<listener class-name="common.Listeners"></listener>			
+		<listener class-name="common.Listeners" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>			
 	</listeners>
 	<test name="Reports Testing">
 		<parameter name="browser" value="chrome"></parameter>
